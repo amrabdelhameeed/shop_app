@@ -11,7 +11,6 @@ class LocationResponse {
     addresses =
         List.from(json['addresses']).map((e) => Addresses.fromJson(e)).toList();
   }
-
   Map<String, dynamic> toJson() {
     final data = <String, dynamic>{};
     data['summary'] = summary.toJson();

@@ -97,12 +97,13 @@ class SettingsScreen extends StatelessWidget {
                         ..text = cubit.userResponse!.data.phone,
                     ),
                     TextFormField(
+                      obscureText: true,
                       decoration: const InputDecoration(
                         hintText: 'password',
                       ),
                       controller: passwordCont,
                     ),
-                    Spacer(),
+                    const Spacer(),
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(

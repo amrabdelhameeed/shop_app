@@ -14,12 +14,11 @@ class HomeLayout extends StatelessWidget {
   final List<Widget> _pages = [
     const HomeScreen(),
     SearchScreen(),
-    CartAndFavouriteScreen(isCart: true),
+    const CartAndFavouriteScreen(isCart: true),
     OrderScreen(),
-    CartAndFavouriteScreen(isCart: false),
+    const CartAndFavouriteScreen(isCart: false),
     SettingsScreen(),
   ];
-  final List<String> _titles = ['Home', 'Search', 'Cart', 'Settings'];
   @override
   Widget build(BuildContext context) {
     return PersistentTabView(context,

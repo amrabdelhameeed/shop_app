@@ -61,7 +61,7 @@ class ProductItem extends StatelessWidget {
             ),
           ),
           Expanded(
-            flex: 3,
+            flex: 4,
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
               child: Column(
@@ -69,9 +69,9 @@ class ProductItem extends StatelessWidget {
                 children: [
                   AutoSizeText(
                     product.name,
-                    maxLines: 3,
+                    maxLines: 2,
                     softWrap: true,
-                    maxFontSize: 22,
+                    maxFontSize: 25,
                     minFontSize: 15,
                     wrapWords: true,
                     overflow: TextOverflow.ellipsis,
